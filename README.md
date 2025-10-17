@@ -79,64 +79,8 @@ docker compose up -d --build
 ## 🧱 Contoh Output
 
 📊 **Visualisasi Regresi Linear**
-![](static/images/result_jumuah.png)
-
-📋 **Tabel Evaluasi Model**
-
-| Metric | Value |
-| ------ | ----- |
-| MAE    | 2.14  |
-| MSE    | 6.31  |
-| R²     | 0.87  |
-
----
-
-## 🔒 Struktur Data MongoDB
-
-Koleksi: `submissions`
-
-```json
-{
-  "_id": "ObjectId",
-  "nama_user": "Intan Dwi",
-  "file_train": "uploads/training/data_train.csv",
-  "file_test": "uploads/testing/data_test.csv",
-  "x_columns": ["Feature1", "Feature2"],
-  "y_column": "Target",
-  "evaluasi": {
-    "MAE": 1.24,
-    "MSE": 4.62,
-    "R2": 0.89
-  },
-  "visualisasi_path": "result_Intan_Dwi.png",
-  "created_at": "2025-10-17T14:00:00"
-}
-```
-
----
-
-## 💾 Backup & Akses Database
-
-Akses MongoDB melalui **MongoDB Compass**:
-
-```
-mongodb://intanchris:sdt25@localhost:27017/appdb?authSource=appdb
-```
-
----
+![Arsitektur Sistem](https://raw.githubusercontent.com/intananggreini99/Flask_Pemrog3/main/static/plots/result_jumuah.png)
 
 ## 📜 Lisensi
 
-MIT License © 2025 — **Intan Dwi Anggreini**
-
----
-
-> 💡 *“Data tells a story — this app helps you visualize it.”*
-
-```
-
----
-
-Apakah kamu mau saya bantu buatkan versi **README bilingual (Indonesia + English)** atau versi **README dengan badge GitHub & preview screenshot (Markdown style GitHub repo modern)**?  
-Itu bisa bikin project kamu terlihat jauh lebih profesional di GitHub.
-```
+License © 2025 — **Intan Dwi Anggreini & Christine Aulia**
