@@ -1,7 +1,8 @@
-Flask==2.3.2
-pymongo==4.4.0
-gridfs==0.7.1
-pandas==2.2.0
-numpy==1.26.0
-matplotlib==3.8.0
-python-dotenv==1.0.0
+Flask==3.0.3
+pymongo==4.8.0
+certifi==2024.8.30
+python-dotenv==1.0.1
+pandas==2.2.2
+matplotlib==3.9.2
+numpy==1.26.4
+gunicorn==22.0.0

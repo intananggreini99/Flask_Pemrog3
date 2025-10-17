@@ -1,0 +1,51 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flask_app
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    # Pakai .env kalau ada (MONGO_URI, MONGO_DB, dll.)
+    env_file:
+      - .env
+    environment:
+      # fallback jika .env tidak ada / variabel tidak di-set
+      - PYTHONUNBUFFERED=1
+      - FLASK_ENV=production
+      - MONGO_URI=${MONGO_URI:-mongodb://intanchris:sdt25@mongo:27017/appdb?authSource=appdb}
+      - MONGO_DB=${MONGO_DB:-appdb}
+    volumes:
+      - ./uploads:/app/uploads
+      - ./static/plots:/app/static/plots
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+  mongo:
+    image: mongo:6.0
+    container_name: mongo
+    restart: unless-stopped
+    # Penting: bind ke semua interface (bukan 127.0.0.1)
+    command: ["--bind_ip_all"]
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=rootpass
+    volumes:
+      - mongo_data:/data/db
+      # Jalankan script pembuatan user app (intanchris/sdt25) saat pertama kali
+      - ./mongo-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mongosh", "--username", "root", "--password", "rootpass", "--authenticationDatabase", "admin", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+
+volumes:
+  mongo_data:
