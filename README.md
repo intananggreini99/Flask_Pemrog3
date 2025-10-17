@@ -33,33 +33,7 @@ Aplikasi ini mendukung **upload dataset**, **pemilihan variabel X & Y**, **visua
 
 ## 🏗️ Arsitektur Sistem
 
-📂 Flask_Pemrog3/
-├── app.py
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── .env
-│
-├── templates/
-│   ├── page1_upload.html
-│   ├── page2_variables.html
-│   └── page3_result.html
-│
-├── static/
-│   ├── images/back1.jpg
-│   └── plots/
-│
-├── uploads/
-│   ├── training/
-│   └── testing/
-│
-├── matriks/
-│   └── operations/
-│       └── linear_regression.py
-│
-└── mongo-init/
-└── init.js
-
+![Arsitektur Sistem](https://raw.githubusercontent.com/intananggreini99/Flask_Pemrog3/main/static/images/architecture.png)
 ---
 
 ## ⚙️ Instalasi & Menjalankan (via Docker Compose)
