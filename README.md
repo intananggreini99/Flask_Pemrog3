@@ -79,7 +79,7 @@ docker compose up -d --build
 ## 🧱 Contoh Output
 
 📊 **Visualisasi Regresi Linear**
-![](static/images/jumuah_plot.png)
+![](static/images/result_jumuah.png)
 
 📋 **Tabel Evaluasi Model**
 
