@@ -77,9 +77,12 @@ docker compose up -d --build
 ---
 
 ## 🧱 Contoh Output
+![Arsitektur Sistem](https://raw.githubusercontent.com/intananggreini99/Flask_Pemrog3/main/static/images/sample1.png)
 
 📊 **Visualisasi Regresi Linear**
 ![Arsitektur Sistem](https://raw.githubusercontent.com/intananggreini99/Flask_Pemrog3/main/static/plots/result_jumuah.png)
+
+---
 
 ## 📜 Lisensi
 
