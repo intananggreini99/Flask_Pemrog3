@@ -5,32 +5,6 @@ Aplikasi ini mendukung **upload dataset**, **pemilihan variabel X & Y**, **visua
 
 ---
 
-## 🚀 Fitur Utama
-
-✅ **Upload Dataset**
-- Upload file CSV untuk data *training* dan *testing*.
-- Data disimpan otomatis ke MongoDB serta direktori `uploads/`.
-
-✅ **Pilih Variabel**
-- Pilih variabel bebas (X) dan variabel target (Y) secara dinamis.
-- Mendukung lebih dari satu variabel X.
-
-✅ **Regresi Linear Custom**
-- Menggunakan model buatan sendiri dari direktori `matriks/operations/linear_regression.py`.
-- Tidak menggunakan scikit-learn — sepenuhnya implementasi internal.
-
-✅ **Visualisasi Hasil**
-- Menampilkan hasil regresi berupa grafik dan evaluasi model.
-- Grafik disimpan ke folder `static/plots/`.
-
-✅ **Database MongoDB**
-- Menggunakan MongoDB (via Docker) untuk menyimpan data user, file path, hasil evaluasi, dan visualisasi.
-
-✅ **Docker Compose Support**
-- Semua service (Flask + MongoDB) terbungkus dalam satu stack Docker Compose.
-
----
-
 ## 🏗️ Arsitektur Sistem
 
 ![Arsitektur Sistem](https://raw.githubusercontent.com/intananggreini99/Flask_Pemrog3/main/static/images/architecture.png)
