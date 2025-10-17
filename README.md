@@ -76,27 +76,10 @@ docker compose up -d --build
 
 ---
 
-## 🧰 Pengembangan Lokal (tanpa Docker)
-
-Jika ingin menjalankan langsung di lokal:
-
-```bash
-pip install -r requirements.txt
-python app.py
-```
-
-Akses di:
-
-```
-http://127.0.0.1:5000
-```
-
----
-
 ## 🧱 Contoh Output
 
 📊 **Visualisasi Regresi Linear**
-![](static/images/example_plot.png)
+![](static/images/jumuah_plot.png)
 
 📋 **Tabel Evaluasi Model**
 
