@@ -1,4 +1,3 @@
-```markdown
 # 🔍 Flask Linear Regression Web App
 
 Sebuah web aplikasi interaktif berbasis **Flask** untuk melakukan analisis **regresi linear** terhadap dataset CSV secara visual, cepat, dan fleksibel.  
@@ -34,8 +33,6 @@ Aplikasi ini mendukung **upload dataset**, **pemilihan variabel X & Y**, **visua
 
 ## 🏗️ Arsitektur Sistem
 
-```
-
 📂 Flask_Pemrog3/
 ├── app.py
 ├── Dockerfile
@@ -62,8 +59,6 @@ Aplikasi ini mendukung **upload dataset**, **pemilihan variabel X & Y**, **visua
 │
 └── mongo-init/
 └── init.js
-
-````
 
 ---
 
