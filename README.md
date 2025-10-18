@@ -86,4 +86,4 @@ docker compose up -d --build
 
 ## 📜 Lisensi
 
-License © 2025 — **Intan Dwi Anggreini & Christine Aulia**
+License © 2025 — **Intan Dwi Anggreini & Christine Aulina Anugrah**
